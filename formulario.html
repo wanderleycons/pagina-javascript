@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+    <script type="text/javascript" src="js/32-ejercicio-dom.js"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .box{
+            width: 200px;
+            height: 250px;
+            float: center;
+            margin: 20px;
+        }
+        .dashed{
+            float: center;
+            border: 3px dashed black;
+            padding: 3px;
+            width: 500px;
+            height: 600px;
+            color: black;
+            background: orange;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <header class="site-header inicio">
+        <div class="contenedor contenido-header">
+          <center><div class="barra">
+            
+                
+                    
+            </div></center>
+                <center><h1>REGISTRATE AQUÍ, LA MEJOR SEGURIDAD PARA GUARDAR TUS REGISTROS</h1></center>
+        </div><!-- contenedor-->     
+      </header>
+  
+      <h1 class="fw-300 centrar-texto">Contactos</h1>
+      
+       <center><img src="img/portada_contatos.jpg" width="600" height="300"></center>
+  
+      
+           <h2 class="fw-300 centrar-texto">Llena el formulario de Contacto</h2>
+  
+           <div class="box">
+    
+            <main class="contenedor seccion contenido-centrado">
+            <legend>Información Personal</legend>
+        <form action="#" method="POST" id="formulario" onsubmit=" return false">
+
+           
+            
+             <label for="nombre">Nombres:</label>
+             <input type="text" name="nombre" id="nombre" placeholder="Escriba aquí su Nombres"/>
+             <span id="error_nombre"></span>
+
+             <label for="apellidos">Apellidos:</label>
+             <input type="text" name="apellidos" id="apellidos" placeholder="Escriba aquí su Apellidos"/>
+             <span id="error_apellidos"></span>
+
+             
+             <label for="edad">Edad: </label>
+             <input type="number" name="edad" id="edad" placeholder="Escríba su Edad">
+             <span id="error_edad"></span>
+
+             <label for="cedula">Cedula:</label>
+             <input type="number" name="cedula" id="cedula" placeholder="Escriba aquí su cedula">
+             <span id="error_cedula"></span>
+       
+            <label for="contraseña">Contraseña:</label>
+            <input type="password" name="contraseña" id="contraseña" placeholder="Escriba su contraseña" required> 
+            
+
+             <label for="email">E-mail: </label>
+             <input type="email" name="email" id="email" placeholder="Escriba correo electrónico" required>
+             
+
+            <label for="telefono">Teléfono:</label>
+            <input type="number" name="telefono" id="telefono" placeholder="Escriba numero telefónico">
+            <span id="error_telefono"></span>
+
+
+            <legend>Digite su Nacionalidad</legend>
+            <div>
+             
+                <p>Escoja su opción aquí abajo</p>
+                    <select name="ciudadano" id="ciudadano">
+                        <option value="" disabled selected>-- Opciones --</option> 
+                        <option>Colombia</option> 
+                        <option>Ecuador</option> 
+                        <option>Brazil</option>
+                        <option>Argentina</option> 
+                        <option>Uruguay</option> 
+                        <option>Paraguay</option> 
+                    </select> 
+            </div>
+            <span id="error_ciudadano"></span>
+
+            <input type="submit" value="Enviar" id="submit "  class="boon boton-naranja"/>
+
+            
+
+        </form>
+    </main>
+
+    </div>
+
+   
+                     <center><div class="box dashed">
+                        <h3>Informaciòn del usuario</h3>
+                        <hr/>
+                        <p id="p_nombre">
+                            Nombre: <span></span>
+                            </p>
+                            <p id="p_apellidos">
+                                Apellidos: <span></span>
+                                </p>
+                                <p id="p_edad">
+                                    Edad: <span></span>
+                                    </p>
+                                    <p id="p_cedula">
+                                        Cedula: <span></span>
+                                        </p>
+                                        <p id="p_email">
+                                            E-mail: <span></span>
+                                            </p>  
+                                            <p>
+                                                Contraseña no se podrá ver por seguridad
+                                            </p>
+                                        <p id="p_telefono">
+                                            Telefono: <span></span>
+                                            </p>
+                                            <p id="p_ciudadano">
+                                                Nacionalidad: <span></span>
+                                                </p>   
+                                                  
+
+                                        
+
+                                
+                
+                
+
+                    </div></center>
+                    
+            
+               
+        
+     
+    
+
+</body>
+</html>
